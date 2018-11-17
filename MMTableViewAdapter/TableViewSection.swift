@@ -13,3 +13,21 @@ public protocol TableViewSection: UICollectionViewDelegate {
     var headerViewHolder: TableViewSectionHeaderFooterViewHolder? { get }
     var footerViewHolder: TableViewSectionHeaderFooterViewHolder? { get }
 }
+
+public class SimpleTableViewSection: NSObject, TableViewSection {
+    
+    public var cellViewHolders: [TableViewCellViewHolder]
+    
+    public init(cellViewHolders: [TableViewCellViewHolder]) {
+        self.cellViewHolders = cellViewHolders
+    }
+    
+    public var headerViewHolder: TableViewSectionHeaderFooterViewHolder? {
+        return nil
+    }
+    
+    public var footerViewHolder: TableViewSectionHeaderFooterViewHolder? {
+        return nil
+    }
+    
+}

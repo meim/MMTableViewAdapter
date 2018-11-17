@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA08881821A0D61D00FF99DA /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08881721A0D61D00FF99DA /* FormViewController.swift */; };
+		AA08881B21A0D6B800FF99DA /* FormTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08881A21A0D6B800FF99DA /* FormTableViewAdapter.swift */; };
+		AA08882021A0D70800FF99DA /* FormTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08881E21A0D70800FF99DA /* FormTextFieldTableViewCell.swift */; };
+		AA08882121A0D70800FF99DA /* FormTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA08881F21A0D70800FF99DA /* FormTextFieldTableViewCell.xib */; };
+		AA08882521A0DA0F00FF99DA /* FormSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08882321A0DA0F00FF99DA /* FormSwitchTableViewCell.swift */; };
+		AA08882621A0DA0F00FF99DA /* FormSwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA08882421A0DA0F00FF99DA /* FormSwitchTableViewCell.xib */; };
 		AA26893E21A0550B00BEABA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26893D21A0550B00BEABA8 /* AppDelegate.swift */; };
-		AA26894021A0550B00BEABA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26893F21A0550B00BEABA8 /* ViewController.swift */; };
 		AA26894321A0550B00BEABA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26894121A0550B00BEABA8 /* Main.storyboard */; };
 		AA26894521A0550C00BEABA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA26894421A0550C00BEABA8 /* Assets.xcassets */; };
 		AA26894821A0550C00BEABA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26894621A0550C00BEABA8 /* LaunchScreen.storyboard */; };
@@ -33,9 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA08881721A0D61D00FF99DA /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		AA08881A21A0D6B800FF99DA /* FormTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewAdapter.swift; sourceTree = "<group>"; };
+		AA08881E21A0D70800FF99DA /* FormTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		AA08881F21A0D70800FF99DA /* FormTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		AA08882321A0DA0F00FF99DA /* FormSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		AA08882421A0DA0F00FF99DA /* FormSwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormSwitchTableViewCell.xib; sourceTree = "<group>"; };
 		AA26893A21A0550B00BEABA8 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA26893D21A0550B00BEABA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA26893F21A0550B00BEABA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA26894221A0550B00BEABA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA26894421A0550C00BEABA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA26894721A0550C00BEABA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +65,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA08881421A0D57E00FF99DA /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				AA08881921A0D69D00FF99DA /* TableViewCells */,
+				AA08881621A0D60B00FF99DA /* TableViewAdapters */,
+				AA08881521A0D60300FF99DA /* Controllers */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		AA08881521A0D60300FF99DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA08881721A0D61D00FF99DA /* FormViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA08881621A0D60B00FF99DA /* TableViewAdapters */ = {
+			isa = PBXGroup;
+			children = (
+				AA08881A21A0D6B800FF99DA /* FormTableViewAdapter.swift */,
+			);
+			path = TableViewAdapters;
+			sourceTree = "<group>";
+		};
+		AA08881921A0D69D00FF99DA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AA08881E21A0D70800FF99DA /* FormTextFieldTableViewCell.swift */,
+				AA08881F21A0D70800FF99DA /* FormTextFieldTableViewCell.xib */,
+				AA08882321A0DA0F00FF99DA /* FormSwitchTableViewCell.swift */,
+				AA08882421A0DA0F00FF99DA /* FormSwitchTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		AA26893121A0550B00BEABA8 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +123,8 @@
 		AA26893C21A0550B00BEABA8 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				AA08881421A0D57E00FF99DA /* Form */,
 				AA26893D21A0550B00BEABA8 /* AppDelegate.swift */,
-				AA26893F21A0550B00BEABA8 /* ViewController.swift */,
 				AA26894121A0550B00BEABA8 /* Main.storyboard */,
 				AA26894421A0550C00BEABA8 /* Assets.xcassets */,
 				AA26894621A0550C00BEABA8 /* LaunchScreen.storyboard */,
@@ -179,6 +226,8 @@
 				AA26894821A0550C00BEABA8 /* LaunchScreen.storyboard in Resources */,
 				AA26894521A0550C00BEABA8 /* Assets.xcassets in Resources */,
 				AA26894321A0550B00BEABA8 /* Main.storyboard in Resources */,
+				AA08882621A0DA0F00FF99DA /* FormSwitchTableViewCell.xib in Resources */,
+				AA08882121A0D70800FF99DA /* FormTextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA26894021A0550B00BEABA8 /* ViewController.swift in Sources */,
+				AA08881821A0D61D00FF99DA /* FormViewController.swift in Sources */,
+				AA08881B21A0D6B800FF99DA /* FormTableViewAdapter.swift in Sources */,
+				AA08882521A0DA0F00FF99DA /* FormSwitchTableViewCell.swift in Sources */,
+				AA08882021A0D70800FF99DA /* FormTextFieldTableViewCell.swift in Sources */,
 				AA26893E21A0550B00BEABA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

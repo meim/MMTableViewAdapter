@@ -14,6 +14,8 @@ extension UITableView {
         dataSource = adapter
         delegate = adapter
         adapter.tableView = self
+        registerCellViewHolderTypes(adapter.dynamicCellViewHolderTypes)
+        registerSectionHeaderFooterViewHolderTypes(adapter.dyanmicSectionHeaderFooterViewHolderTypes)
     }
     
     private func registerCellViewHolderTypes(_ cellViewHolderTypes: [TableViewDynamicCellViewHolder.Type]) {
@@ -52,8 +54,8 @@ open class TableViewAdapter: NSObject, UITableViewDataSource, UITableViewDelegat
     fileprivate let dynamicCellViewHolderTypes: [TableViewDynamicCellViewHolder.Type]
     fileprivate let dyanmicSectionHeaderFooterViewHolderTypes: [TableViewDynamicSectionHeaderFooterViewHolder.Type]
     
-    public init(dynamicCellViewHolderTypes: [TableViewDynamicCellViewHolder.Type],
-                dyanmicSectionHeaderFooterViewHolderTypes: [TableViewDynamicSectionHeaderFooterViewHolder.Type]) {
+    public init(dynamicCellViewHolderTypes: [TableViewDynamicCellViewHolder.Type] = [],
+                dyanmicSectionHeaderFooterViewHolderTypes: [TableViewDynamicSectionHeaderFooterViewHolder.Type] = []) {
         self.dynamicCellViewHolderTypes = dynamicCellViewHolderTypes
         self.dyanmicSectionHeaderFooterViewHolderTypes = dyanmicSectionHeaderFooterViewHolderTypes
     }
