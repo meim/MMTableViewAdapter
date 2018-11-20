@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol TableViewSection: UICollectionViewDelegate {
+public protocol TableViewSection {
     var cellViewHolders: [TableViewCellViewHolder] { get set }
     var headerViewHolder: TableViewSectionHeaderFooterViewHolder? { get }
     var footerViewHolder: TableViewSectionHeaderFooterViewHolder? { get }
